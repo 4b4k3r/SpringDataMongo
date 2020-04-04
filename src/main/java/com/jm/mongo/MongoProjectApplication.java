@@ -24,10 +24,4 @@ public class MongoProjectApplication {
 	public RestTemplate restTemplate() {
 		return new RestTemplate();
 	}
-	
-	@Bean(name = "mongoOperations")
-	public MongoOperations getMongoOperations() {
-		MongoClientURI mongoUri = new MongoClientURI("mongodb+srv://<user>:<password>@cluster0-4uw90.mongodb.net/<db>?retryWrites=true&w=majority");
-		return new MongoTemplate(new MongoClient(mongoUri), "<db>");
-	}
 }
