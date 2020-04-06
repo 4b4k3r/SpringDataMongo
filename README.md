@@ -6,7 +6,8 @@ This is an example of a simple mapping of data to mongo by spring in rest api
 
 |Name|Value|Example|
 |----|-----|-------|
-|spring.data.mongodb.uri|A uri of dabase connection (direct authentication with a base)|mongodb://user:password@host:port/AuthBaseName| |spring.data.mongodb.database|A base to read/write a data|baseName|
+|spring.data.mongodb.uri|A uri of dabase connection (direct authentication with a base)|mongodb://user:password@host:port/AuthBaseName|
+|spring.data.mongodb.database|A base to read/write a data|baseName|
 
 ##Endpoint
 
