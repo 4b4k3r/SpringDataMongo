@@ -59,7 +59,7 @@ public class ProductoApi {
 	}
 
 	@ResponseStatus(code = HttpStatus.OK)
-	@PutMapping(path = "/puduct")
+	@PutMapping(path = "/product")
 	public String newProduct(@RequestBody Producto product) {
 		try {
 			return new Gson().toJson(mongoOperations.insert(product));
